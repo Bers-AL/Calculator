@@ -27,6 +27,8 @@ public class Main {
             throw new Exception("throws Exception // т.к. строка не является математической операцией");
         if (strArr.length > 3)
             throw new Exception("throws Exception // т.к. строка не является математической операцией");
+        if (strArr[0].length() > 2 || strArr[2].length() > 2)
+            throw new Exception("throws Exception // Только целые числа");
         try {
             x  = Integer.parseInt(strArr[0]);
         } catch (Exception e) {
