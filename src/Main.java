@@ -24,9 +24,9 @@ public class Main {
         String operator;
 
         if (strArr.length < 3)
-            throw new Exception("throws Exception //т.к. строка не является математической операцией");
+            throw new Exception("throws Exception // т.к. строка не является математической операцией");
         if (strArr.length > 3)
-            throw new Exception("throws Exception //т.к. строка не является математической операцией");
+            throw new Exception("throws Exception // т.к. строка не является математической операцией");
         if (strArr[0].length() > 2 || strArr[2].length() > 2)
             throw new Exception("throws Exception // Только целые числа");
         try {
@@ -40,9 +40,9 @@ public class Main {
             throw new Exception("throws Exception // Второе значение не являтся числом");
         }
         if (Integer.parseInt(strArr[0]) > 10 && Integer.parseInt(strArr[0]) < 1)
-            throw new Exception("throws Exception //только числа от 1 до 10 включительно!");
+            throw new Exception("throws Exception // только числа от 1 до 10 включительно!");
         if (Integer.parseInt(strArr[2]) > 10 && Integer.parseInt(strArr[2]) < 1)
-            throw new Exception("throws Exception //только числа от 1 до 10 включительно!");
+            throw new Exception("throws Exception // только числа от 1 до 10 включительно!");
 
         operator = strArr[1];
 
