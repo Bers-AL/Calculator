@@ -23,9 +23,7 @@ public class Main {
         int y;
         String operator;
 
-        if (strArr.length < 3)
-            throw new Exception("throws Exception // т.к. строка не является математической операцией");
-        if (strArr.length > 3)
+        if (strArr.length != 3)
             throw new Exception("throws Exception // т.к. строка не является математической операцией");
         if (strArr[0].length() > 2 || strArr[2].length() > 2)
             throw new Exception("throws Exception // Только целые числа");
@@ -54,7 +52,7 @@ public class Main {
             case "/":
                 yield String.valueOf(x / y);
             default:
-                throw new Exception("throws Exception //Неверный оператор");
+                throw new Exception("throws Exception // Неверный оператор");
         };
 
 //        if (operator.equals("+")) return String.valueOf(x + y);
