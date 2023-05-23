@@ -27,8 +27,6 @@ public class Main {
             throw new Exception("throws Exception // т.к. строка не является математической операцией");
         if (strArr.length > 3)
             throw new Exception("throws Exception // т.к. строка не является математической операцией");
-        if (strArr[0].length() > 2 || strArr[2].length() > 2)
-            throw new Exception("throws Exception // Только целые числа");
         try {
             x  = Integer.parseInt(strArr[0]);
         } catch (Exception e) {
@@ -39,9 +37,7 @@ public class Main {
         } catch (Exception e) {
             throw new Exception("throws Exception // Второе значение не являтся числом");
         }
-        if (Integer.parseInt(strArr[0]) > 10 && Integer.parseInt(strArr[0]) < 1)
-            throw new Exception("throws Exception // только числа от 1 до 10 включительно!");
-        if (Integer.parseInt(strArr[2]) > 10 && Integer.parseInt(strArr[2]) < 1)
+        if ((x > 10 || x < 1) || (y > 10 || y < 1))
             throw new Exception("throws Exception // только числа от 1 до 10 включительно!");
 
         operator = strArr[1];
