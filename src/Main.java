@@ -5,7 +5,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNextLine()) {
             String str = scanner.nextLine();
-            String result;
+            int result;
             try {
                 result = calc(str);
             } catch (Exception e) {
@@ -16,7 +16,7 @@ public class Main {
         }
     }
 
-    public static String calc(String input) throws Exception {
+    public static int calc(String input) throws Exception {
         String input2 = input.trim();
         String[] strArr = input2.split("\\s+");
         int x;
@@ -44,13 +44,13 @@ public class Main {
 
         return switch (operator) {
             case "+":
-                yield String.valueOf(x + y);
+                yield (x + y);
             case "-":
-                yield String.valueOf(x - y);
+                yield (x - y);
             case "*":
-                yield String.valueOf(x * y);
+                yield (x * y);
             case "/":
-                yield String.valueOf(x / y);
+                yield (x / y);
             default:
                 throw new Exception("throws Exception // Неверный оператор");
         };
