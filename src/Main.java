@@ -55,22 +55,22 @@ public class Main {
                 throw new Exception("throws Exception // Неверный оператор");
         };
 
-//        if (operator.equals("+")) return String.valueOf(x + y);
-//        else  if (operator.equals("-")) return String.valueOf(x - y);
-//        else  if (operator.equals("*")) return String.valueOf(x * y);
-//        else  if (operator.equals("/")) return String.valueOf(x / y);
+//        if (operator.equals("+")) return (x + y);
+//        else  if (operator.equals("-")) return (x - y);
+//        else  if (operator.equals("*")) return (x * y);
+//        else  if (operator.equals("/")) return (x / y);
 //        else throw new Exception("throws Exception //Неверный оператор");
 
 //        deprecated
 //        switch (operator) {
 //            case "+":
-//                return String.valueOf(x + y);
+//                return (x + y);
 //            case "-":
-//                return String.valueOf(x - y);
+//                return (x - y);
 //            case "*":
-//                return String.valueOf(x * y);
+//                return (x * y);
 //            case "/":
-//                return String.valueOf(x / y);
+//                return (x / y);
 //            default:
 //                throw new Exception("throws Exception //Неверный оператор")
     }
